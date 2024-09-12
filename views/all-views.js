@@ -1,3 +1,5 @@
+require('dotenv').config()
+
 const order_text = `
 <b>Fundamental NodeJs</b>
 
@@ -5,8 +7,8 @@ const order_text = `
 <blockquote expandable>
 <b>Baǵdarlamalawdı NodeJs texnologiyası járdeminde úyretiwshi kitap. Kitap keń auditoriyaǵa mólsherlengen bolıp baǵdarlamalawdı endi baslaǵanlarǵa kúshli fundament wazıypasın atqaradı al tájriybeli baǵdarlamalawshılarǵa texnologiyanı tolıq túsiniw imkánin beredi.</b>
 </blockquote>
-<code>Tolıq:</code> <b><a href="https://codinger.uz/book/about">codinger.uz/book/about</a></b>
-<code>Demo: </code> <b><a href="https://codinger.uz/book/demo">codinger.uz/book/demo</a></b>
+<code>Tolıq:</code> <b><a href="https://${process.env.SERVER_URL}/book/about">codinger.uz/book/about</a></b>
+<code>Demo: </code> <b><a href="https://${process.env.SERVER_URL}/book/demo">codinger.uz/book/demo</a></b>
 <code>Baha: </code> <b><tg-spoiler>51 000 $UZS</tg-spoiler> <s>60 000 $UZS</s></b> (<b>15%</b> shegirme menen)
 
 <blockquote><code>
@@ -27,13 +29,13 @@ Buyırtpa maǵlıwmatları:
 📍  <b>Mánzil:</b> <code>${shipment_address}</code>
 `
 const help_text = `
-<b>@books_nukus_bot</b> botı <a href="https://xemis.uz"><b>Xemis Group</b></a> tárepinen, <a href="https://codinger.uz/"><b>codinger.uz</b></a> platforması hámde <a href="https://codinger.uz/about"><b>Fundamental NodeJs</b></a> kitabı ushın arnawlı jaratılǵan.
+<b>@books_nukus_bot</b> botı <a href="https://xemis.uz"><b>Xemis Group</b></a> tárepinen, <a href="https://${process.env.SERVER_URL}/"><b>codinger.uz</b></a> platforması hámde <a href="https://${process.env.SERVER_URL}/about"><b>Fundamental NodeJs</b></a> kitabı ushın arnawlı jaratılǵan.
 
 Bot járdeminde tómendegishe ámellerdi qılsańıs boladı:
 /start\b\b\b\b\b\b\b\b\b\b\b\b- Bottı qaytadan baslaw
 /help\b\b\b\b\b\b\b\b\b\b\b\b\b- Bot haqqındaǵı maǵlıwmatlar hám bottı basqarıw ushın komandalar
 /order\b\b\b\b\b\b\b\b\b\b\b- "Fundamental NodeJs" kitabına buyırtpa beriw
-/subscribe\b\b\b- <a href="https://codinger.uz/">codinger.uz</a> platformasına aǵza bolıw
+/subscribe\b\b\b- <a href="https://${process.env.SERVER_URL}/">codinger.uz</a> platformasına aǵza bolıw
 /support\b\b\b\b\b\b- Qollap-quwwatlawǵa xabar qaldırıw
 /contact\b\b\b\b\b\b- Baylanıs ushın maǵlıwmatlar
 
@@ -44,11 +46,11 @@ const contact_text = `<b>Baylanıs ushın maǵlıwmatlar</b>
 
 📞 +998889321507
 👩‍🚀 @gulinaz_hr
-📧 <a href="https://codinger.uz/send_mail_to_team?from=telegram">qidirbaevbegzat@gmail.com</a>
-🌐 <a href="https://codinger.uz/">https://codinger.uz/</a>
+📧 <a href="https://${process.env.SERVER_URL}/send_mail_to_team?from=telegram">qidirbaevbegzat@gmail.com</a>
+🌐 <a href="https://${process.env.SERVER_URL}/">https://codinger.uz/</a>
 `
 const subscribe_text = `
-⚡ <a href="https://codinger.uz/"><b>Platformaǵa</b></a> jańa aǵzalardı qabıllaw <b>11/09/2024</b> sánesinen baslanadı.
+⚡ <a href="https://${process.env.SERVER_URL}/"><b>Platformaǵa</b></a> jańa aǵzalardı qabıllaw <b>11/09/2024</b> sánesinen baslanadı.
 `
 const conversation_support_text = (ctx, id) => `Sizdiń
 
