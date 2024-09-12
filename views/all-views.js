@@ -29,7 +29,7 @@ Buyırtpa maǵlıwmatları:
 📍  <b>Mánzil:</b> <code>${shipment_address}</code>
 `
 const help_text = `
-<b>@books_nukus_bot</b> botı <a href="https://xemis.uz"><b>Xemis Group</b></a> tárepinen, <a href="https://${process.env.SERVER_URL}/"><b>codinger.uz</b></a> platforması hámde <a href="https://${process.env.SERVER_URL}/about"><b>Fundamental NodeJs</b></a> kitabı ushın arnawlı jaratılǵan.
+<b>@books_nukus_bot</b> botı <a href="https://xemis.uz"><b>Xemis Group</b></a> tárepinen, <a href="https://${process.env.SERVER_URL}/"><b>codinger.uz</b></a> platforması hámde <a href="https://${process.env.SERVER_URL}#about"><b>Fundamental NodeJs</b></a> kitabı ushın arnawlı jaratılǵan.
 
 Bot járdeminde tómendegishe ámellerdi qılsańıs boladı:
 /start\b\b\b\b\b\b\b\b\b\b\b\b- Bottı qaytadan baslaw
