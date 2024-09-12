@@ -109,7 +109,7 @@ class ServerApplication {
     // this.app.post('/create_review', MIDDLEWARE_CHECK_ACCESS, this.api.API_CREATE_REVIEW)
     // this.app.put('/review/:id', MIDDLEWARE_CHECK_ACCESS, this.api.API_UPDATE_REVIEW)
     this.app.get('/stats', this.api.API_GET_ALL_STATS)
-    // this.app.get('/order', this.api.API_GET_ALL_ORDERS)
+    this.app.get('/order', this.api.API_GET_CREATE_ORDER)
     this.app.post('/platform', this.api.API_PLATFORM)
     // this.app.post('/login', this.api.API_LOGIN)
     // this.app.get('/profile', MIDDLEWARE_VERIFY_TOKEN, this.api.API_PROFILE)

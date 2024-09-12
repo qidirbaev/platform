@@ -66,7 +66,7 @@ module.exports = class ServerApi {
     }
   }
 
-  async API_GET_ALL_ORDERS(req, res) {
+  async API_GET_CREATE_ORDER(req, res) {
     const { name, phone, comment } = req.query
 
     try {
