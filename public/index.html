@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Fundamental NodeJs</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+  <link href="img/favicon.png" rel="icon">
+  <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Vendor CSS Files -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="vendor/aos/aos.css" rel="stylesheet">
+  <link href="vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="css/main.css" rel="stylesheet">
+</head>
+
+<body class="index-page">
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center">
+
+      <a href="#" class="logo d-flex align-items-center me-auto">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <!-- <img src="assets/img/logo.png" alt=""> -->
+        <h1 class="sitename">#nodejs</h1>
+      </a>
+
+      <nav id="navmenu" class="navmenu" style="background-color: #fff;">
+        <ul>
+          <li><a href="#about">Kitap haqqında</a></li>
+          <li><a href="#features">Bólimler</a></li>
+          <li><a href="#reviews">Pikirler</a></li>
+          <li><a href="#contact">Baylanıs</a></li>
+          <li><a href="/book/demo">Demo</a></li>
+          <li><a href="/platform">Platforma</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list" style="color: #0a2d3a;"></i>
+      </nav>
+
+      <a class="btn-getstarted flex-md-shrink-0" href="/buy">Satıp Alıw</a>
+
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero section">
+
+      <div class="container">
+        <div class="row gy-4">
+          <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center">
+            <h1 data-aos="fade-up">Baǵdarlamalawdı házirden úyreniwdi baslań </h1>
+            <p data-aos="fade-up" data-aos-delay="100">Qaraqalpaq tilinde baǵdarlamalawdı <b>NodeJs</b> texnologiyası
+              járdeminde úyretiwshi interaktiv kitap
+            </p>
+            <div class="d-flex flex-column flex-md-row" data-aos="fade-up" data-aos-delay="200">
+              <a href="#about" class="btn-get-started">Baslaw <i class="bi bi-arrow-right"></i></a>
+              <a href="https://t.me/books_nukus_bot/"
+                class="btn-watch-video d-flex align-items-center justify-content-center ms-0 ms-md-4 mt-4 mt-md-0">
+                <i class="bi bi-rocket-takeoff"></i><span>Tolıq</span>
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="zoom-out">
+            <img src="img/hero-img.png" class="img-fluid animated" alt="">
+          </div>
+        </div>
+      </div>
+
+    </section><!-- /Hero Section -->
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+
+      <div class="container" data-aos="fade-up">
+        <div class="row gx-0">
+
+          <div class="col-lg-6 d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="200">
+            <div class="content">
+              <h3>Kitap haqqında</h3>
+              <h2>Baǵdarlamalardı NodeJs arqalı tez, effektiv hám joqarı dárejede jaratıń</h2>
+              <p>
+                NodeJstıń kúshin seziniń. Joqarı-effektivlikke iye baǵdarlamalardı NodeJs járdeminde qanday qılıp
+                jaratıwdı úyreniń. Bul jolda sizdi mısallar, haqıyqıy joybarlar jánede interaktiv platforma
+                kútpekte.
+              </p>
+              <div class="text-center text-lg-start">
+                <a href="/about"
+                  class="btn-read-more d-inline-flex align-items-center justify-content-center align-self-center">
+                  <span>Tolıqraq tanısıw</span>
+                  <i class="bi bi-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 d-flex align-items-center" data-aos="zoom-out" data-aos-delay="200">
+            <img src="img/about-img.png" class="img-fluid" alt="">
+          </div>
+
+        </div>
+      </div>
+
+    </section><!-- /About Section -->
+
+    <!-- Stats Section -->
+    <section id="stats" class="stats section">
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Statistika</h2>
+        <p>Kitap-sanlarda: <br></p>
+      </div>
+      <div class="container" data-aos="fade-up" data-aos-delay="1000">
+
+        <div id="_stats" class="row gy-4">
+
+          <div class="col-lg-3 col-md-6">
+            <div class="stats-item d-flex align-items-center w-100 h-100">
+              <i class="bi bi-emoji-smile color-blue flex-shrink-0"></i>
+              <div>
+                <span id="1stat" data-aos-delay="2000" data-purecounter-start="0" data-purecounter-end="47"
+                  data-purecounter-duration="2" class="purecounter"></span>
+                <p>Satıp alıwshılar</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="stats-item d-flex align-items-center w-100 h-100">
+              <i class="bi bi-people color-orange flex-shrink-0"></i>
+              <div>
+                <span id="2stat" data-aos-delay="2000" data-purecounter-start="0" data-purecounter-end="11"
+                  data-purecounter-duration="2" class="purecounter"></span>
+                <p>Platformadan paydalanıwshılar</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="stats-item d-flex align-items-center w-100 h-100">
+              <i class="bi bi-globe color-green flex-shrink-0"></i>
+              <div>
+                <span id="3stat" data-aos-delay="2000" data-purecounter-start="0" data-purecounter-end="242"
+                  data-purecounter-duration="2" class="purecounter"></span>
+                <p>Tarmaqlardaǵı paydalanıwshılar</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="stats-item d-flex align-items-center w-100 h-100">
+              <i class="bi bi-book color-pink flex-shrink-0"></i>
+              <div>
+                <span id="4stat" data-aos-delay="2000" data-purecounter-start="0" data-purecounter-end="17"
+                  data-purecounter-duration="2" class="purecounter"></span>
+                <p>Tarqatılǵan kitaplar</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- /Stats Section -->
+
+    <!-- Features Section -->
+    <section id="features" class="features section">
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Bólimler</h2>
+        <p>Kitap ishindegi bólimler:<br></p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row gy-5">
+
+          <div class="col-xl-6" data-aos="zoom-out" data-aos-delay="100">
+            <img src="img/features.png" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-xl-6 d-flex">
+            <div class="row align-self-center gy-4">
+
+              <div class="col-md-6" data-aos="fade-up" data-aos-delay="200">
+                <div class="feature-box d-flex align-items-center">
+                  <i class="bi bi-check"></i>
+                  <h3>Asinxron baǵdarlamalaw tiykarları</h3>
+                </div>
+              </div><!-- End Feature Item -->
+
+              <div class="col-md-6" data-aos="fade-up" data-aos-delay="300">
+                <div class="feature-box d-flex align-items-center">
+                  <i class="bi bi-check"></i>
+                  <h3>NodeJS tiykarları</h3>
+                </div>
+              </div><!-- End Feature Item -->
+
+              <div class="col-md-6" data-aos="fade-up" data-aos-delay="400">
+                <div class="feature-box d-flex align-items-center">
+                  <i class="bi bi-check"></i>
+                  <h3>Node.JSta baǵdarlama jasaw</h3>
+                </div>
+              </div><!-- End Feature Item -->
+
+              <div class="col-md-6" data-aos="fade-up" data-aos-delay="500">
+                <div class="feature-box d-flex align-items-center">
+                  <i class="bi bi-check"></i>
+                  <h3>Paydalı konspeciyalar</h3>
+                </div>
+              </div><!-- End Feature Item -->
+
+              <div class="col-md-6" data-aos="fade-up" data-aos-delay="600">
+                <div class="feature-box d-flex align-items-center">
+                  <i class="bi bi-check"></i>
+                  <h3>NodeJs baǵdarlamalarin optimizatsiyalaw</h3>
+                </div>
+              </div><!-- End Feature Item -->
+
+              <div class="col-md-6" data-aos="fade-up" data-aos-delay="700">
+                <div class="feature-box d-flex align-items-center">
+                  <i class="bi bi-check"></i>
+                  <h3>Bonus: DALL-E menen Node.Js’ta jasalma intellektli proekt</h3>
+                </div>
+              </div><!-- End Feature Item -->
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- /Features Section -->
+
+    <!-- Alt Features Section -->
+    <section id="alt-features" class="alt-features section">
+
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Kitap + Platforma</h2>
+        <p>Kitap hám platforma arqalı nelerge iye bolasız?<br></p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row gy-5">
+
+          <div class="col-xl-7 d-flex order-2 order-xl-1" data-aos="fade-up" data-aos-delay="200">
+
+            <div class="row align-self-center gy-5">
+
+              <div class="col-md-6 icon-box">
+                <i class="bi bi-box-fill"></i>
+                <div>
+                  <h4>Kúshli fundamentke iye bolıw</h4>
+                  <p>NodeJs texnologiyasınıń konspeciyası, sintaksisi hám praktikalıq tiykarların túsinip alasız</p>
+                </div>
+              </div><!-- End Feature Item -->
+
+              <div class="col-md-6 icon-box">
+                <i class="bi bi-rocket-takeoff-fill"></i>
+                <div>
+                  <h4>Ámeliyattı birge alıp barıw</h4>
+                  <p>Úyrenilgen bilimlerińisti dawamlı túrde ámeliyatqa qollap, hám fundamental hám ámeliy bilimdi
+                    jámleysiz</p>
+                </div>
+              </div><!-- End Feature Item -->
+
+              <div class="col-md-6 icon-box">
+                <i class="bi bi-cup-hot-fill"></i>
+                <div>
+                  <h4>Baǵdarlamalawda mashqalalardı sheshiwdi úyreniw</h4>
+                  <p>NodeJste baǵdarlamalawdaǵı qıyınshılıqlar hám eń jaqsı ámeliyatlar kónlikpelerin alasız</p>
+                </div>
+              </div><!-- End Feature Item -->
+
+              <div class="col-md-6 icon-box">
+                <i class="bi bi-diagram-3-fill"></i>
+                <div>
+                  <h4>Baǵdarlamalaw processin keńinen túsiniw</h4>
+                  <p>NodeJs rakursında ulıwma baǵdarlamalaw processiniń ishinde bolasız hám bir bólegine aylanasız</p>
+                </div>
+              </div><!-- End Feature Item -->
+
+              <div class="col-md-6 icon-box">
+                <i class="bi bi-award-fill"></i>
+                <div>
+                  <h4>Birinshi joybarıńıstıń bolıw</h4>
+                  <p>Kitap sońında ózińistiń tolıqlay isleytuǵın joybarıńısqa iye bolasız</p>
+                </div>
+              </div><!-- End Feature Item -->
+
+              <div class="col-md-6 icon-box">
+                <i class="bi bi-briefcase-fill"></i>
+                <div>
+                  <h4>Baǵdarlamalawda karyera jasaw</h4>
+                  <p>Kitap+Platforma sizge jańa baǵdarlamalaw karyerasın baslawǵa imkániyat jaratadı</p>
+                </div>
+              </div><!-- End Feature Item -->
+
+            </div>
+
+          </div>
+
+          <div class="col-xl-5 d-flex align-items-center order-1 order-xl-2" data-aos="fade-up" data-aos-delay="100">
+            <img src="img/alt-features.png" class="img-fluid" alt="">
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- /Alt Features Section -->
+
+    <!-- Reviews Section -->
+    <section class="testimonials section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Pikirler</h2>
+        <p>Kitap haqqındaǵı ekspertlerdiń pikiri:<br></p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="5000">
+
+        <div class="swiper init-swiper">
+          <script type="application/json" class="swiper-config">
+            {
+              "loop": true,
+              "speed": 600,
+              "autoplay": {
+                "delay": 3000
+              },
+              "slidesPerView": "auto",
+              "pagination": {
+                "el": ".swiper-pagination",
+                "type": "bullets",
+                "clickable": true
+              },
+              "breakpoints": {
+                "320": {
+                  "slidesPerView": 2,
+                  "spaceBetween": 40
+                },
+                "1200": {
+                  "slidesPerView": 3,
+                  "spaceBetween": 1
+                }
+              }
+            }
+          </script>
+          <div id="reviews" class="swiper-wrapper"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+
+    </section><!-- /Reviews Section -->
+
+    <!-- Clients Section -->
+    <section id="clients" class="clients section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <p>Bizge isenim bildirgen<br></p>
+        <h2>kompaniyalar</h2>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="swiper init-swiper">
+          <script type="application/json" class="swiper-config">
+                {
+                  "loop": true,
+                  "speed": 600,
+                  "autoplay": {
+                    "delay": 5000
+                  },
+                  "slidesPerView": "auto",
+                  "pagination": {
+                    "el": ".swiper-pagination",
+                    "type": "bullets",
+                    "clickable": true
+                  },
+                  "breakpoints": {
+                    "320": {
+                      "slidesPerView": 2,
+                      "spaceBetween": 40
+                    },
+                    "480": {
+                      "slidesPerView": 3,
+                      "spaceBetween": 60
+                    },
+                    "640": {
+                      "slidesPerView": 4,
+                      "spaceBetween": 80
+                    },
+                    "992": {
+                      "slidesPerView": 6,
+                      "spaceBetween": 120
+                    }
+                  }
+                }
+              </script>
+          <div class="swiper-wrapper align-items-center">
+            <div class="swiper-slide"><img src="img/google.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="img/google.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="img/google.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="img/google.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="img/google.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="img/google.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="img/google.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="img/google.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="img/google.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="img/google.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="img/google.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="img/google.png" class="img-fluid" alt=""></div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+
+    </section><!-- /Clients Section -->
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Buyırtpa beriw</h2>
+        <p>Kitaptı bir qansha usılda buyırtpa qılsańıs boladı:</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-6">
+            <div class="row gy-4">
+              <div class="col-md-6">
+                <div class="info-item" data-aos="fade" data-aos-delay="200">
+                  <i class="bi bi-geo-alt"></i>
+                  <h3>Orınǵa kelip</h3>
+                  <a href="https://maps.app.goo.gl/7ETZ6EKLVqKZvKrR9" target="_blank">
+                    <p>Qaraqalpaqstan Respublikası, Nókis qalası</p>
+                    <p>A. Timur 80</p>
+                  </a>
+                </div>
+              </div><!-- End Info Item -->
+
+              <div class="col-md-6">
+                <div class="info-item" data-aos="fade" data-aos-delay="300">
+                  <i class="bi bi-telephone"></i>
+                  <h3>Qońıraw etip</h3>
+                  <p><a href="tel:+998900656909">+998 90 065 69 09</a></p>
+                  <p><a href="tel:+998889321507">+998 88 932 15 07</a></p>
+                </div>
+              </div><!-- End Info Item -->
+
+              <div class="col-md-6">
+                <div class="info-item" data-aos="fade" data-aos-delay="400">
+                  <i class="bi bi-send"></i>
+                  <h3>Telegram arqalı</h3>
+                  <p><a href="https://t.me/gulinaz_hr" target="_blank">Satıw Menejer</a></p>
+                  <p><a href="https://t.me/books_nukus_bot" target="_blank">Telegram Bot</a></p>
+                </div>
+              </div><!-- End Info Item -->
+
+              <div class="col-md-6">
+                <div class="info-item" data-aos="fade" data-aos-delay="500">
+                  <i class="bi bi-handbag"></i>
+                  <h3>Onlayn dúkanlar arqalı</h3>
+                  <p>
+                    <a href="https://uzum.uz/uz/product/the-official-simple-989399"
+                      style="pointer-events: none; cursor: default;">
+                      Uzum Market
+                    </a>
+                    <span class="badge text-bg-secondary">Dúkanda qamaǵan</span>
+                  </p>
+                  <p>
+                    <a href="https://asaxiy.uz/product/tara-vestover-talaba"
+                      style="pointer-events: none; cursor: default;">
+                      Asaxiy Books
+                    </a>
+                    <span class="badge text-bg-secondary">Dúkanda qamaǵan</span>
+                  </p>
+                </div>
+              </div><!-- End Info Item -->
+
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="info-item text-center" data-aos="fade" data-aos-delay="500">
+              <i class="bi bi-box-seam"></i>
+              <h3>Tuwırıdan-tuwırı buyırtpa qılıw</h3>
+              <form id="direct-order" action="/order" method="GET" class="php-email-form" data-aos="fade-up"
+                data-aos-delay="200">
+                <div class="row gy-4">
+
+                  <div class="col-md-6">
+                    <input type="text" name="name" class="form-control" placeholder="Atıńızdı kiritiń" required="">
+                  </div>
+
+                  <div class="col-md-6 ">
+                    <input type="text" id="phone-number" class="form-control" name="phone" placeholder="00 000 00 00"
+                      required="">
+                  </div>
+
+                  <div class="col-12">
+                    <textarea class="form-control" name="comment" rows="6" placeholder="Qosımsha xabar"></textarea>
+                  </div>
+
+                  <div class="col-12 text-center">
+                    <button id="submit-order" type="submit">Buyırtpa beriw</button>
+                  </div>
+
+                </div>
+              </form>
+            </div>
+          </div><!-- End Contact Form -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Contact Section -->
+
+    <!-- ToastContainer -->
+    <div aria-live="polite" aria-atomic="true" class="position-relative">
+      <div id="toastContainer" class="toast-container position-fixed end-0 top-0 p-3"></div>
+    </div>
+
+  </main>
+
+  <footer id="footer" class="footer">
+    <div class="container footer-top">
+      <div class="row gy-4" style="align-items: center; justify-content: center;">
+        <div class="col-lg-4 col-md-6 footer-about">
+          <a href="/" class="d-flex align-items-center">
+            <span class="sitename">#nodejs</span>
+          </a>
+          <div class="footer-contact pt-3">
+            <p>Qaraqalpaqstan Respublikası Nókis qalası</p>
+            <p>A. Timur 80/10</p>
+            <p class="mt-3">
+              <strong>Tel: </strong>
+              <a href="tel:+998889321507" style="font-weight: inherit; font-size: inherit;">
+                +998 88 932 15 07
+              </a>
+            </p>
+            <p>
+              <strong>Email:</strong>
+              <a href="mailto:qidirbaevbegzat@gmail.com?subject=%23CodingerUz%20%23FundamentalNodeJs%20%23Kitap"
+                style="font-weight: inherit; font-size: inherit;">
+                qidirbaevbegzat@gmail.com
+              </a>
+            </p>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-12">
+          <h4>Gúzetip barıń</h4>
+          <p>Kitap hámde platforma haqqındaǵı jańalanıwlardı baqlap barıw ushın bizdiń tarmaqlardaǵı jeke betlerimiske
+            aǵza bolıń</p>
+          <div class="social-links d-flex">
+            <a href="https://t.me/books_nukus_bot"><i class="bi bi-telegram"></i></a>
+            <a href="#!"><i class="bi bi-linkedin"></i></a>
+            <a href="#!"><i class="bi bi-facebook"></i></a>
+            <a href="https://github.com/qidirbaev"><i class="bi bi-github"></i></a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="container copyright text-center mt-4">
+      <p>© <span>Copyright</span> <strong class="px-1 sitename">Colorlib</strong> <span>All Rights Reserved</span></p>
+      <div class="credits">
+        Platforma <a href="#!" style="font-weight: bold;">Xemis Team</a> tárepinen jaratılǵan
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="vendor/form/validate.js"></script>
+  <script src="vendor/aos/aos.js"></script>
+  <script src="vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="js/main.js"></script>
+  <script src="js/reviews.js"></script>
+</body>
+
+</html>
